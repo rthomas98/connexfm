@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: local('../fonts/Raleway/static/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+    src: local('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: $primary;
+  color: black;
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+  }
+}
+
+.btn-secondary-outline {
+  background-color: transparent;
+  border-color: $secondary;
+  color: black;
+  &:hover {
+    background-color: $secondary;
+    border-color: $secondary;
+    color: white;
+  }
+}
+
+.bg-primary {
+  background-color: $primary;
+  color: white;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+  color: white;
+}
+
+.sub-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+

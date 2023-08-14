@@ -92,3 +92,10 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
+// Add Font Awesome Pro
+function add_font_awesome_pro() {
+    wp_enqueue_script( 'font-awesome-pro', 'https://kit.fontawesome.com/3529cf9057.js', array(), null ); // replace 'your-kit-code' with your actual kit code
+}
+add_action( 'wp_enqueue_scripts', 'add_font_awesome_pro' );

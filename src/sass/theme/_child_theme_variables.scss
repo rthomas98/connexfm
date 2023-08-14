@@ -3,5 +3,14 @@
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+$cnfm-blue: #127DCF;
+$cnfm-dark-blue: #025FA8;
+$cnfm-green: #82CDBF;
+$cnfm-gray: #D1D3D4;
+$cnfm-light-gray: #F2F2F2;
+
+$primary: $cnfm-blue;  // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: $cnfm-green;
+
+
+

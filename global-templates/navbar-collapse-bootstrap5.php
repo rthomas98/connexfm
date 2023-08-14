@@ -12,7 +12,26 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+<div class="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4"></div>
+            <div class="col-sm-12 col-md-12 col-lg-5"></div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <form role="search" method="get" class="search-form float-end" action="<?php echo home_url( '/' ); ?>">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s" title="Search for:" />
+                        <button type="submit" class="btn btn-secondary input-group-append">
+                            <i class="fa-sharp fa-regular fa-globe-pointer"></i>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<nav id="main-nav" class="navbar navbar-expand-md navbar-light " aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
