@@ -22,7 +22,25 @@
                     "name": "big_image_hero",
                     "label": "Big Image Hero",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_64db9840a1c49",
+                            "label": "Video",
+                            "name": "video",
+                            "aria-label": "",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 }
@@ -50,5 +68,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692028239
+    "modified": 1692112975
 }
