@@ -3,7 +3,58 @@
   background: linear-gradient(to left top, $cnfm-blue, $cnfm-green);
   color: #fff;
   width: 100%;
-}
-#main-nav {
 
+  .nav-link {
+    color: white;
+
+    &:hover {
+      color: $cnfm-blue;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+      display: none !important;
+  }
+}
+
+#main-nav {
+  background-color: white !important;
+
+  .nav-link {
+    color: black;
+
+    &:hover {
+      color: $cnfm-blue;
+    }
+
+    @include media-breakpoint-down(md) {
+      color: white;
+
+        &:hover {
+            color: $cnfm-green;
+        }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .web-logo {
+      display: none;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .mobile-logo {
+      display: none;
+    }
+  }
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: white;
+  background-color: $cnfm-green;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
 }

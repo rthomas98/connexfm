@@ -62,6 +62,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				)
 			);
 			?>
+
+
 		</div><!-- .offcanvas -->
 
 	</div><!-- .container(-fluid) -->

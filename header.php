@@ -26,6 +26,47 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
+    <?php if ( have_rows( 'top_bar', 'option' ) ) : ?>
+        <div class="top">
+            <div class="container">
+                <?php while ( have_rows( 'top_bar', 'option' ) ) : the_row(); ?>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4"></div>
+                        <div class="col-sm-12 col-md-12 col-lg-5">
+                            <?php if ( have_rows( 'top_menu' ) ) : ?>
+                                <ul class="nav justify-content-end">
+                                    <?php while ( have_rows( 'top_menu' ) ) : the_row(); ?>
+                                        <?php $link = get_sub_field( 'link' ); ?>
+                                        <?php if ( $link ) : ?>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="<?php echo esc_url( $link); ?>">
+                                                    <?php the_sub_field( 'link_label' ); ?>
+                                                </a>
+                                            </li>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                </ul>
+                            <?php else : ?>
+                                <?php // No rows found ?>
+                            <?php endif; ?>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                            <form role="search" method="get" class="search-form float-end" action="<?php echo home_url( '/' ); ?>">
+                                <div class="input-group">
+                                    <input type="search" class="form-control" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s" title="Search for:" />
+                                    <button type="submit" class="btn btn-secondary input-group-append">
+                                        <i class="fa-sharp fa-regular fa-globe-pointer"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    <?php endif; ?>
+
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
