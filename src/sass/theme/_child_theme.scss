@@ -52,10 +52,35 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.btn-white {
+    background-color: white;
+    color: black;
+    &:hover {
+        background-color: $cnfm-green;
+        color: black;
+    }
+}
 
+.display-1, .display-2, .display-3, .display-4 {
+  font-weight: 700;
+}
 
 .sub-title {
   font-size: 1rem;
   font-weight: 700;
 }
 
+.icon-holder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $cnfm-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    i {
+        font-size: 1.3rem;
+        color: white;
+    }
+}
