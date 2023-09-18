@@ -15008,7 +15008,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .bg-primary {
   background-color: #127DCF;
-  color: white;
+  color: white !important;
 }
 
 .bg-secondary {
@@ -15021,6 +15021,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: black;
 }
 .btn-white:hover {
+  background-color: #82CDBF;
+  color: black;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+}
+.btn-black:hover {
   background-color: #82CDBF;
   color: black;
 }

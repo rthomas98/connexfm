@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-primary {
   background-color: $primary;
-  color: white;
+  color: white !important;
 }
 
 .bg-secondary {
@@ -55,6 +55,15 @@ h1, h2, h3, h4, h5, h6 {
 .btn-white {
     background-color: white;
     color: black;
+    &:hover {
+        background-color: $cnfm-green;
+        color: black;
+    }
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
     &:hover {
         background-color: $cnfm-green;
         color: black;
