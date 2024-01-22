@@ -21,33 +21,33 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-sm-12 col-md-12 col-lg-3 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
 
                 <p>
-                    <?php the_field( 'company_info', 'option' ); ?>
+                    <?php echo get_field( 'company_info', 'option' ); ?>
                 </p>
 
                 <address>
-                    <?php the_field( 'address', 'option' ); ?>
+                    <?php echo get_field( 'address', 'option' ); ?>
                 </address>
 
                 <?php if ( get_field( 'toll_free_number', 'option' ) ) : ?>
                     <p class="m-0"> <strong>Toll Free:</strong>
-                        <a href="tel:<?php the_field( 'toll_free_number', 'option' ); ?>">
-                            <?php the_field( 'toll_free_number', 'option' ); ?>
+                        <a href="tel:<?php echo get_field( 'toll_free_number', 'option' ); ?>">
+                            <?php echo get_field( 'toll_free_number', 'option' ); ?>
                         </a>
                     </p>
                 <?php endif; ?>
 
                 <?php if ( get_field( 'phone_number', 'option' ) ) : ?>
                     <p class="m-0"> <strong>Phone:</strong>
-                        <a href="tel:<?php the_field( 'phone_number', 'option' ); ?>">
-                            <?php the_field( 'phone_number', 'option' ); ?>
+                        <a href="tel:<?php echo get_field( 'phone_number', 'option' ); ?>">
+                            <?php echo get_field( 'phone_number', 'option' ); ?>
                         </a>
                     </p>
                 <?php endif; ?>
 
                 <?php if ( get_field( 'fax_number', 'option' ) ) : ?>
                     <p class="m-0"> <strong>Fax:</strong>
-                        <a href="tel:<?php the_field( 'fax_number', 'option' ); ?>">
-                            <?php the_field( 'fax_number', 'option' ); ?>
+                        <a href="tel:<?php echo get_field( 'fax_number', 'option' ); ?>">
+                            <?php echo get_field( 'fax_number', 'option' ); ?>
                         </a>
                     </p>
                 <?php endif; ?>
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php if ( have_rows( 'navigation_one', 'option' ) ) : ?>
                     <?php while ( have_rows( 'navigation_one', 'option' ) ) : the_row(); ?>
                         <h3>
-                            <?php the_sub_field( 'title' ); ?>
+                            <?php the_field( 'title' ); ?>
                         </h3>
                         <?php if ( have_rows( 'nav' ) ) : ?>
                         <ul class="nav flex-column">
